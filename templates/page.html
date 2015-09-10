@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="/static/main.css">
+    <title>New Edit</title>
+  </head>
+  <body>
+    <br>
+    <form method="post">
+      <div class="login-area">
+        <a class="login-link" href="/_history{{address}}">History</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="login-link">{{username}}</a>
+        <a class="login-link" href="/logout">(Log out)</a>
+      </div>
+      <br>
+      <div id="content">
+        <textarea name="content">{{content}}</textarea>
+        <div style="color: red">{{error}}</div>
+        <input type="submit" value="Save">
+      </div>
+    </form>
+  </body>
+</html>

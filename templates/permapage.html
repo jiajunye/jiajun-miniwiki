@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Permapage</title>
+    	<link type="text/css" rel="stylesheet" href="/static/main.css" >
+	</head>
+	<body>
+		<br>
+		<div class="login-area">
+			<a class="login-link" href='/'>Home Page</a>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			{% if loggedin %}
+			    <a class="login-link" href="/_edit{{address}}?v={{version_id}}">Edit</a>
+				|
+				<a class="login-link" href="/_history{{address}}">History</a>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a class="login-link">{{username}}</a>
+				<a class="login-link" href="/logout">(Log out)</a>
+			{% else %}
+				<a class="login-link" href="/_history{{address}}">History</a>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a class="login-link" href="/login">Log In</a>
+				|
+				<a class="login-link" href="/signup">Signup</a>
+			{% endif %}
+		</div>
+		<br>
+	    <div id="content">{{page.render() | safe}}</div>
+	</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="/static/main.css">
+    <title>History</title>
+  </head>
+  <body>
+    <br>
+    <div class="login-area">
+      <a class="login-link" href='/'>Home Page</a>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      {% if loggedin %}
+        <a class="login-link" href="/_edit{{address}}?v={{version_id}}">Edit</a>
+        |
+        <a class="login-link" href="{{address}}">View</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="login-link">{{username}}</a>
+        <a class="login-link" href="/logout">(Log out)</a>
+      {% else %}
+        <a class="login-link" href="{{address}}">View</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="login-link" href="/login">Log In</a>
+        |
+        <a class="login-link" href="/signup">Signup</a>
+      {% endif %}
+    </div>
+    <h2>History:</h2>
+    <br>
+    <table style="width:100%">
+    	{% for version in history %}
+        <tr>
+          <td class="history-time">{{ version.created.strftime("%c") }}</td>
+          <td class="history-content">{{ version.content[:72] }}</td>
+          <td class="history-edit">
+           <a href="{{version.parent_address}}?v={{version.version_id}}">view</a>
+           &nbsp;&nbsp;
+           <a href="/_edit{{version.parent_address}}?v={{version.version_id}}">edit</a>
+          </td>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+    	{% endfor %}
+    </table>
+  </body>
+</html>
+
+

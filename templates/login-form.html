@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Login</title>
+	<link type="text/css" rel="stylesheet" href="/static/main.css">
+</head>
+<body>
+	<br>
+    Don't have an account yet?
+    <a class="login-link" href="/signup">SIGN UP</a>	
+	<h2>Log In</h2>
+	<form method="post">
+	    <table>
+	        <tr>
+	            <td align="right">Username</td>
+	            <td><input type="text" name="username" value="{{username}}"></td>
+	        </tr>
+	        <tr>
+	            <td align="right">Password</td>
+	            <td><input type="password" name="password"></td>
+	        </tr>
+	    </table>
+	    <div style='color: red'>{{error}}<div>
+	    <input type="submit">
+	</form>
+</body>
+</html>
