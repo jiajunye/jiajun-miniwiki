@@ -5,6 +5,17 @@
     <link type="text/css" rel="stylesheet" href="/static/main.css">
     <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
     <title>Front Page</title>
+    <style>
+    	a:link {
+	    background-color: transparent;
+	    text-decoration: none;
+		}
+	    a:hover {
+	    color: red;
+	    background-color: transparent;
+	    text-decoration: underline;
+		}
+    </style>
   </head>
   <body>
   	<br>
@@ -12,20 +23,22 @@
 		{% if loggedin %}
 		    <a class="login-link" href="/_edit/">Edit</a>
 			|
-			<a class="login-link" href="/_history{{address}}">History</a>
+			<a class="login-link" href="/_history{{address}}" target="_blank">History</a>
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<a class="login-link">{{username}}</a>
 			<a class="login-link" href="/logout">(Log out)</a>
 		{% else %}
-			<a class="login-link" href="/_history{{address}}">History</a>
+			<a class="login-link" href="/_history{{address}}" target="_blank">History</a>
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<a class="login-link" href="/login">Log In</a>
 			|
 			<a class="login-link" href="/signup">Signup</a>
 		{% endif %}
 	</div>
-	<h2 class="title" ><span style="color: #0266C8">Welcome</span> <span style="color: #F90101">to</span> 
-		<span style="color: #FE9A2E">Jiajun's</span> <span style="color: green">Wiki</span></h2>  
+	<h2 class="title" >
+		<span style="color: #0266C8">Welcome</span> <span style="color: #F90101">to</span> 
+		<a href="https://www.linkedin.com/profile/view?id=AAkAABqd9qUBFR0DOs_VimCvQ1Uovh87FoE61ok&authType=NAME_SEARCH&authToken=xSOc&locale=en_US&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A446559909%2CauthType%3ANAME_SEARCH%2Cidx%3A1-2-2%2CtarId%3A1442242983342%2Ctas%3Ajiajun%20ye" target="_blank"><span style="color: #FE9A2E">Jiajun's</span></a> <span style="color: green">Wiki</span>
+	</h2>  
 	<table style="width: 100%">
 		<tr>
 			<td align="center" width="20%">
@@ -33,13 +46,18 @@
 				<ol>
 					{% for wiki in last_modified %}
 						<li>
-							<a href="{{ wiki.address }}">{{ wiki.address }}</a>
+							<a href="{{ wiki.address }}" target="_blank">{{ wiki.address }}
+							</a>
 						</li>
 						<br>
 					{% endfor %}
 				</ol>
 			</td>
-			<td align="center" width="80%"><img src="http://blog.caranddriver.com/wp-content/uploads/2015/04/2016-Chevrolet-Corvette-Z06-coupe-101-876x535.jpg" alt="Couldn't find image" height="385.5" width="630"></td>
+			<td align="center" width="80%">
+				<a href="https://en.wikipedia.org/wiki/Chevrolet_Corvette" target="_blank">
+					<img src="http://blog.caranddriver.com/wp-content/uploads/2015/04/2016-Chevrolet-Corvette-Z06-coupe-101-876x535.jpg" alt="Couldn't find image" height="385.5" width="630">
+				</a>
+			</td>
 		</tr>
 	</table>
 	<h3>By clicking Edit button, you can edit whatever you want to show below:</h3>

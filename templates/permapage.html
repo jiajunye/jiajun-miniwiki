@@ -4,6 +4,13 @@
 	<head>
 		<title>Permapage</title>
     	<link type="text/css" rel="stylesheet" href="/static/main.css" >
+    	<style>
+	    	a:hover {
+		    color: red;
+		    background-color: transparent;
+		    text-decoration: underline;
+			}
+    	</style>
 	</head>
 	<body>
 		<br>
@@ -13,16 +20,18 @@
 			{% if loggedin %}
 			    <a class="login-link" href="/_edit{{address}}?v={{version_id}}">Edit</a>
 				|
-				<a class="login-link" href="/_history{{address}}">History</a>
+				<a class="login-link" href="/_history{{address}}" target="_blank">History
+				</a>
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				<a class="login-link">{{username}}</a>
-				<a class="login-link" href="/logout">(Log out)</a>
+				<a class="login-link" href="/logout" target="_blank">(Log out)</a>
 			{% else %}
-				<a class="login-link" href="/_history{{address}}">History</a>
+				<a class="login-link" href="/_history{{address}}" target="_blank">History
+				</a>
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<a class="login-link" href="/login">Log In</a>
+				<a class="login-link" href="/login" target="_blank">Log In</a>
 				|
-				<a class="login-link" href="/signup">Signup</a>
+				<a class="login-link" href="/signup" target="_blank">Signup</a>
 			{% endif %}
 		</div>
 		<br>

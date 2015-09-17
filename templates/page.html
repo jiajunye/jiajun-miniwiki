@@ -4,12 +4,19 @@
   <head>
     <link type="text/css" rel="stylesheet" href="/static/main.css">
     <title>New Edit</title>
+    <style>
+      a:hover {
+      color: red;
+      background-color: transparent;
+      text-decoration: underline;
+      }
+    </style>
   </head>
   <body>
     <br>
     <form method="post">
       <div class="login-area">
-        <a class="login-link" href="/_history{{address}}">History</a>
+        <a class="login-link" href="/_history{{address}}" target="_blank">History</a>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a class="login-link">{{username}}</a>
         <a class="login-link" href="/logout">(Log out)</a>
