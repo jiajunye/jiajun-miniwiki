@@ -2,7 +2,7 @@
 <h2>Udacity CS253 Final Project</h2>
 A Fully Functional Wiki Website
 
-The wiki website is http://jiajun-miniwiki.appspot.com
+The wiki website is https://jiajun-miniwiki.appspot.com
 
 <h2>Main Features:</h2>
 <ol>
