@@ -4,6 +4,7 @@
   <head>
     <link type="text/css" rel="stylesheet" href="/static/main.css">
     <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
     <title>Front Page</title>
     <style>
     	a:link {
@@ -37,30 +38,65 @@
 	</div>
 	<h2 class="title" >
 		<span style="color: #0266C8">Welcome</span> <span style="color: #F90101">to</span> 
-		<a href="https://www.linkedin.com/profile/view?id=AAkAABqd9qUBFR0DOs_VimCvQ1Uovh87FoE61ok&authType=NAME_SEARCH&authToken=xSOc&locale=en_US&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A446559909%2CauthType%3ANAME_SEARCH%2Cidx%3A1-2-2%2CtarId%3A1442242983342%2Ctas%3Ajiajun%20ye" target="_blank"><span style="color: #FE9A2E">Jiajun's</span></a> <span style="color: green">Wiki</span>
-	</h2>  
-	<table style="width: 100%">
+		<span style="color: #FE9A2E">Jiajun's</span></a> <span style="color: green">Wiki</span>
+	</h2>
+	<br>
+	<table class="fornt-table">
 		<tr>
-			<td align="center" width="20%">
-				<h3>Last 10 Modified Wikis:</h3>
-				<ol>
-					{% for wiki in last_modified %}
-						<li>
-							<a href="{{ wiki.address }}" target="_blank">{{ wiki.address }}
-							</a>
-						</li>
-						<br>
-					{% endfor %}
-				</ol>
+			<td class="information" rowspan = "2">
+				<img src="https://lh3.googleusercontent.com/ofC1JfcSSBNHblTz_Yp4W6yXsBNhvuEKYEotEp2ifRTzeNzXr6BuOfMoXFFuAA1MySUTOKJMiRkByWoTiaRPc0lcDRZKj6n_cuDCLC943fghSo87dgq1E0qDws9_nd2klIT78gv_NwQWhAZZ2IRxFT-vjbGZs2qZChPZ2HNtVz_i8_LNnAnbLHleUTpWRHQQFgRSNdfkD9xhRVTlW0cM7y9X62aD31MFXg5Mi2rK-SGb1Bnvshef2PFmQaIyuLnuMWAMcNX1EPBGTLKCDOIV_D93BbEzVk62JZrZ6m8g7SAiyXMDDchqjC8UKVDFeWtGTSzC2kCNdXFIPuOLbrC8JeI00CWckadXRSBA0Z3Jw9KHh3NXPTPqK78rx9NwKLs--U0kSXxrXpV_Do7naLnEC68GP3N4ydxRIPyFql26JawUkQpxua-e2wt97Kg1mFpvrwjayVanGcEhqyZfyZ6aZfaICV7UJ3GFMCbFqw0DEJeceQfELXUI0Zu4_j2tuZDcusvJ3_TmZPMHd18mm0UHCGJGAOJEV0i1bNHZ7exXvso=w721-h985-no" alt="Couldn't find image" width="50%" height=1.366*width>
+				<br>
+				<h3>Jiajun Ye (Jason)</h3>
+				<br>
+				<a class="linkedin-link" href="https://www.linkedin.com/profile/view?id=AAkAABqd9qUBFR0DOs_VimCvQ1Uovh87FoE61ok&authType=NAME_SEARCH&authToken=xSOc&locale=en_US&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A446559909%2CauthType%3ANAME_SEARCH%2Cidx%3A1-3-3%2CtarId%3A1443130598308%2Ctas%3Ajiajun" target="_blank">Check LinkedIn Page</a>
+				<br><br>
+				Email:
+				<br><a href="mailto:jasonyecs@gmail.com">jasonyecs@gmail.com</a>
+				<br><br>
+				GitHub:
+				<br><a href="https://github.com/jiajunye" target="_blank">https://github.com/jiajunye</a>
+				<br><br>
+				Jiajun's Blog:<br>
+				<a href="http://jiajun-blog.appspot.com/blog" target="_blank">http://jiajun-blog.appspot.com/blog</a>
 			</td>
-			<td align="center" width="80%">
+
+			<td class="introduction">
+				<div class="how"><img style="vertical-align: bottom" src="https://lh3.googleusercontent.com/dO6widbRnXtkcVi2FFnMAMjHUrQ85aVGVzd7cm3WOHecclDzmsQZnthuUxWpx56h_RgrVMTyJJqoTnua4z_F3ZIsWn6FeSpq_ywCBRvTL4_CrDtUciUZ4f9JK2BkPYuAPtl1eEewQUA3Dckp_mR4zAO5nWbJ-DnKzcsl6DTMMjDC2r6LffVszZPK_71cxbRp82ESJNIdczOmf8KcAwvL3Es2C4h8L7sI1XzvyR-23WaOgbh2ddrgH8qZdOxgOytjmf6nRyvoaG9Wtw0h6Cw0_GJiULrvnTmrzckp63R5rD5ifcInMZd6wiR_8hBRP-GACLneT1iVIrbf2_17QILxT_qYAX65oXxlbPgIX_YYidujinzmz7p2MVsPn3CwxyZ_qCCI-QU0YbhX1rR2lnRBBf1euopUCljYEB-wrR9GbKlJtJIHCpOLtUvFZF0Y2ERRXZY1zy6gGNhLrRhBPtsPp5VCDeltfMeptTp1Mc2U3-XlLOjka4VZPOybjYjuX8UNGYcUrl549F2k1SWvQjNWI4DSqBwcY6ittrwVIjDuL2o=s783-no" alt="Image couldn't find" width="50" height="50"><span style="vertical-align: middle">How Wiki Works</div>
+				<ul>
+					<li>Wiki is a <a href="http://jiajun-miniwiki.appspot.com/website">website</a> that allows any page to be edited or created.</li>
+					<br>
+					<li>You will be able to enter a non-existent <a href="http://jiajun-miniwiki.appspot.com/url">URL</a>, redirect to an edit page and create a new wiki page from there.</li>
+					<br>
+					<li>If you entered an existent <a href="http://jiajun-miniwiki.appspot.com/url">URL</a>, you will be redirected to the corresponding wiki page. You can also edit that wiki page to create a newer version.</li>
+					<br>
+					<li>Have <a href="http://jiajun-miniwiki.appspot.com/user">user</a> <a href="http://jiajun-miniwiki.appspot.com/account">accounts</a> so that only logged-in <a href="http://jiajun-miniwiki.appspot.com/user">users</a> will have edit privileges.</li>
+					<br>
+					<li>Have a history section which displays the different wiki versions that have existed.</li>
+				</ul>
+			</td>
+
+			<td class="last-modified" rowspan = "2">
+				<h3 class="how" style="text-align: center">Last 10 Modified Wikis</h3>
+					<ol style="padding-left: 40%">
+						{% for wiki in last_modified %}
+							<li>
+								<a href="{{ wiki.address }}" target="_blank">{{ wiki.address }}
+								</a>
+							</li>
+							<br>
+						{% endfor %}
+					</ol>
+			</td>
+		</tr>
+		<tr>
+			<td class="corvette">
 				<a href="https://en.wikipedia.org/wiki/Chevrolet_Corvette" target="_blank">
-					<img src="http://blog.caranddriver.com/wp-content/uploads/2015/04/2016-Chevrolet-Corvette-Z06-coupe-101-876x535.jpg" alt="Couldn't find image" height="385.5" width="630">
+					<img src="https://lh4.googleusercontent.com/-nAjmLO2EkZI/VgRelrBE-FI/AAAAAAAAANY/nZqoR3Eoad8/w876-h535-no/CorvetteZ06-876x535.jpg" alt="Couldn't find image" width="100%" height=0.61*width>
 				</a>
 			</td>
 		</tr>
 	</table>
-	<h3>By clicking Edit button, you can edit whatever you want to show below:</h3>
+	<h3>By clicking Edit button, try to edit whatever you want to show here:</h3>
 	<div>{{content | safe}}</div>
   </body>
 </html>

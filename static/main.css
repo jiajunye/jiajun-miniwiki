@@ -1,7 +1,7 @@
 body {
     position: relative;
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
 
     width: 80%;
     margin: 0 auto;
@@ -21,6 +21,50 @@ textarea {
   font-family: monospace;
 }
 
+td {
+    text-align: right;
+}
+
+.how {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.fornt-table {
+    width: 100%;
+}
+
+.information {
+    padding-top: 10px;
+    vertical-align: top;
+    text-align: left;
+    width: 25%;
+}
+
+.introduction {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+    width: 52%;
+}
+
+.corvette {
+    padding: 25px;
+    width: 52%;
+}
+
+.last-modified {
+    vertical-align: top;
+    padding-top: 5px;
+    width: 23%;
+    text-align: left;
+}
+
+.linkedin-link {
+    color: black;
+    text-decoration: none;
+}
+
 .title {
     font-family: 'Orbitron', sans-serif;
     text-align: center; 
@@ -28,19 +72,19 @@ textarea {
 }
 
 .history-time {
-    width: 25%;
+    width: 30%;
     font-size: 16px;
     text-align: left;
 }
 
 .history-content {
-    width: 65%;
+    width: 56%;
     font-size: 16px;
     text-align: left;
 }
 
 .history-edit {
-    width: 10%;
+    width: 14%;
     font-size: 16px;
     text-align: center;
 }
@@ -49,6 +93,7 @@ textarea {
     color: gray;
     text-decoration: none;
 }
+
 .login-area {
     font-size: 13px;
     color: gray;

@@ -52,7 +52,7 @@
     	{% for version in history %}
         <tr>
           <td class="history-time">{{ version.created.strftime("%c") }}</td>
-          <td class="history-content">{{ version.content[:76] }}</td>
+          <td class="history-content">{{ version.content[:65] }}</td>
           <td class="history-edit">
            <a href="{{version.parent_address}}?v={{version.version_id}}">view</a>
            &nbsp;&nbsp;
